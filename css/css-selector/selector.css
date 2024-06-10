@@ -1,0 +1,30 @@
+p {/*Element Selector - Apply the style to all the p tags in the html*/
+    color: orange;
+    background-color: black;
+}
+
+h2 {
+    color: green;
+}
+
+/* ID Selector - Apply the style to an element with id = para-two*/
+#para-two {
+    color: blue;
+}
+
+/* Class selector - Only apply the style to one or more elements which has applied below class */
+.text-purple {
+    color: purple;
+    font-size: large;
+}
+
+.bg-orange {
+    background-color: goldenrod;
+}
+
+/* CSS Grouping Selector - When you want to apply the same style to multiple elements then use this selector */
+nav, footer {
+    background-color: olivedrab;
+    color: white;
+    font-size: larger;
+}
