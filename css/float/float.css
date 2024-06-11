@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    background: chocolate;
+    width: 700px;
+    border: 2px solid red;
+    margin: 40px auto;
+}
+
+.item {
+    border: 4px solid green;
+    padding: 10px 2px;
+    margin: 10px 2px;
+    background: rgb(114, 192, 240);
+}
+
+#fruit {
+    width: 48%;
+    float: left;
+}
+
+#computer {
+    width: 48%;
+    float: right;
+}
+
+#stationary {
+    width: 100%;
+    clear: both;
+}
+
+p, h3 {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin: auto; 
+    width: 110px;
+}
