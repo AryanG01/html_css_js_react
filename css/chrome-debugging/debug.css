@@ -1,0 +1,15 @@
+p {
+    color: aliceblue;
+    background-color: brown;
+    font-size: 26px;
+}
+
+h2 {
+    background-color: beige;
+}
+
+.text-style {
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+
+.container {
+    width: 650px;
+    margin: 20px auto;
+    border: 3px solid teal;
+    border-radius: 15px;
+    padding: 20px;
+    background: wheat;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+    background-color: thistle;
+}
+
+a:visited {
+    background-color: plum;
+}
+
+a:active {
+    background-color: yellowgreen;
+}
+
+.btn {
+    background: teal;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+    background-color: thistle;
+}
