@@ -4,18 +4,26 @@ import HomePage from './components/pages/HomePage';
 import AboutPage from './components/pages/AboutPage';
 import ContactPage from './components/pages/ContactPage';
 import NavBar from './components/layout/NavBar';
-import {BrowserRouter, Route, Router, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import PageNotFound from './components/pages/PageNotFound';
+import AddUser from './components/user/AddUser';
+import EditUser from './components/user/EditUser';
+import ViewUser from './components/user/ViewUser';
 
 function App() {
   return (
     <Router>
       <div>
         <NavBar />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/contact" component={ContactPage} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/users/add" element={<AddUser />} />
+          <Route path="/users/view" element={<ViewUser />} />
+          <Route path="/users/edit" element={<EditUser />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
       </div>
     </Router>  
   );
