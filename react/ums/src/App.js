@@ -9,6 +9,7 @@ import PageNotFound from './components/pages/PageNotFound';
 import AddUser from './components/user/AddUser';
 import EditUser from './components/user/EditUser';
 import ViewUser from './components/user/ViewUser';
+import AddUserNew from './components/user/AddUserNew';
 
 function App() {
   return (
@@ -16,13 +17,13 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/users/add" element={<AddUser />} />
-          <Route path="/users/view" element={<ViewUser />} />
-          <Route path="/users/edit" element={<EditUser />} />
-          <Route path='*' element={<PageNotFound />} />
+        <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/about" element={<AboutPage />} />
+          <Route exact path="/contact" element={<ContactPage />} />
+          <Route exact path="/users/add" element={<AddUserNew />} />
+          <Route exact path="/users/view/:userId" element={<ViewUser />} />
+          <Route exact path="/users/edit/:userId" element={<EditUser />} />
+          <Route exact path='*' element={<PageNotFound />} />
         </Routes>
       </div>
     </Router>  
